@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f5f5;
+    color: #222;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #5a1020;
+    padding: 18px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 4px solid #8f3045;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    transition: 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #5a1020;
+    border-color: #fff;
+}
+
+/* Main Content */
+
+.container {
+    width: 85%;
+    max-width: 900px;
+    margin: 45px auto;
+}
+
+.container > h1 {
+    color: #5a1020;
+    margin-bottom: 15px;
+}
+
+.container > h2 {
+    color: #5a1020;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.container > p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Feature Boxes */
+
+.feature {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-left: 5px solid #7a1f35;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 15px;
+    transition: 0.2s ease;
+}
+
+.feature:hover {
+    border-color: #7a1f35;
+    border-left-width: 8px;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(90, 16, 32, 0.12);
+}
+
+.feature h3 {
+    color: #5a1020;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+/* About Sections */
+
+.about-section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-top: 4px solid #7a1f35;
+    border-radius: 8px;
+    padding: 25px;
+    margin-top: 25px;
+    transition: 0.2s ease;
+}
+
+.about-section:hover {
+    border-color: #7a1f35;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(90, 16, 32, 0.12);
+}
+
+.about-section h2 {
+    color: #5a1020;
+    margin-bottom: 15px;
+}
+
+.about-section h3 {
+    color: #7a1f35;
+    margin-bottom: 8px;
+}
+
+.about-section p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-section p:last-child {
+    margin-bottom: 0;
+}
+
+.developer-info {
+    color: #666;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    background-color: #eee7e8;
+    border-top: 1px solid #d8cacc;
+    color: #666;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container {
+        width: 90%;
+        margin: 30px auto;
+    }
+}
